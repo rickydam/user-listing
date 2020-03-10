@@ -41,3 +41,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "faker", "~> 2.10"
+
+# The ruby implementation of the GraphQL language
+gem "graphql", "~> 1.10"
