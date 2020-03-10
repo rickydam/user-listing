@@ -44,3 +44,6 @@ gem "faker", "~> 2.10"
 
 # The ruby implementation of the GraphQL language
 gem "graphql", "~> 1.10"
+
+# A development utility to test GraphQL queries
+gem "graphiql-rails", "~> 1.7", :group => :development
