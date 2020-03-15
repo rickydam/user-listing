@@ -21,11 +21,12 @@ class Users extends Component {
         {({ loading, error, data }) => {
           if(loading) return <div>Fetching...</div>;
           if(error) return <div>Error!</div>;
-
           return (
             <div className="flex flex-wrap mb-4">
               {data.users.map((user) => {
-                return <div key={user.id} className="m-4 w-1/4 rounded overflow-hidden shadow-lg">
+                return <div key={user.id}
+                            className="m-4 w-1/4 rounded overflow-hidden shadow-lg"
+                            onClick={this.props.selectUser.bind(this, user)}>
                   <UserAvatar user={user} />
                 </div>
               })}
@@ -36,4 +37,5 @@ class Users extends Component {
     )
   }
 }
+
 export default Users;
